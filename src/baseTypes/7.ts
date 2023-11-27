@@ -8,16 +8,16 @@ const enum Day {
   wen = "work", 
   thu = "work", 
   fri = "work", 
-  san = "free", 
-  sun = "free", 
+  san = "weekend", 
+  sun = "weekend", 
 }
 
 
 function isWeekend(day:Day):boolean {
   if (day === "work") {
-    return true;
+    return false;
   }
-   return false;
+   return    true;
 }
   
 console.log(isWeekend(Day.fri));
